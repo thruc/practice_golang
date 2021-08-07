@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// 可変長引数
 func Sum(s ...int) int {
 	n := 0
 	for _, v := range s {
@@ -11,7 +12,6 @@ func Sum(s ...int) int {
 }
 
 func main() {
-	//fmt.Println("A", "B", "C")
 	fmt.Println(Sum(1, 2, 3))
 
 	fmt.Println(Sum(1, 2, 3, 4, 5, 6))

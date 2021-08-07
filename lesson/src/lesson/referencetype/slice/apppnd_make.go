@@ -4,10 +4,13 @@ import "fmt"
 
 func main() {
 	var a []int = []int{100, 200}
-	a = append(a, 300)
+	a = append(a, 300) // 要素数が変更できるので要素を追加できる
 	fmt.Println(a)
 
-	l := make([]int, 0, 5)
+	m := make([]int, 5) // int型初期値５つを作成
+	fmt.Println(m)
+
+	l := make([]int, 1, 5) // int型５つを作成
 	fmt.Println(l)
 
 	fmt.Printf("len=%d cap=%d value=%v\n", len(l), cap(l), l)
