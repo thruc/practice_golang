@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// 辞書のような働き
 func main() {
 	// 明示
 	var m = map[string]int{"a": 100, "b": 200}
